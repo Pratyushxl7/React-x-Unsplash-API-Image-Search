@@ -18,7 +18,7 @@ class App extends React.Component {
       <div className="ui container" style={{ marginTop: '10px' }}>
         <SearchBar onSubmit={this.onSearchSubmit} />
         <p>Found: {this.state.images.length} images</p>
-        <ImageList/>
+        <ImageList images={this.state.images}/>
       </div>
     );
   }
